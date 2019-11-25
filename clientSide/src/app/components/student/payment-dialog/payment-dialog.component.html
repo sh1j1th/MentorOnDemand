@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Edit a technology</h2>
+<mat-dialog-content>
+    <form #paymentForm="ngForm" (ngSubmit)="paymentTech(paymentForm.value)" class="form">
+        <mat-form-field>
+            <mat-label>Registration Id</mat-label>
+            <input matInput placeholder="RegistrationId" [(ngModel)]="registrationId" name="registrationId" readonly>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>UPI ID</mat-label>
+            <input matInput pattern="^\w+@\w+$" placeholder="UPI Id" [(ngModel)]="upiId" name="upiId"  required>
+            <mat-error ng-show="paymentTech.upiId.$touched && paymentTech.upiId.$error.pattern
+             && paymentTech.upiId.$invalid">UPI Id not valid
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Amount (INR)</mat-label>
+            <input matInput placeholder="price" [(ngModel)]="price" name="price" readonly>
+        </mat-form-field>
+
+        <mat-card-actions>
+            <button mat-raised-button type="submit" color="primary" [disabled]="!paymentForm.valid">Make
+                Payment</button>
+            <button mat-raised-button [mat-dialog-close]="true" color="accent" style="float:right">Cancel</button>
+        </mat-card-actions>
+    </form>
+
+</mat-dialog-content>

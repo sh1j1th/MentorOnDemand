@@ -1,0 +1,34 @@
+
+    <div>
+        <table class="mat-table mat-elevation-z8">
+            <thead>
+                <tr class="mat-header-row">
+                    <th class="mat-header-cell"> Id </th>
+                    <th class="mat-header-cell"> Registration Date </th>
+                    <th class="mat-header-cell"> Course Name </th>
+                    <th class="mat-header-cell"> Progress(%) </th>
+                    <th class="mat-header-cell"> Student Name </th>
+                    <th class="mat-header-cell"> Rating </th>
+                </tr>
+            </thead>
+            <tbody *ngIf="tableData != null">
+                <tr class="mat-row" *ngFor="let element of tableData" >
+                    <td class="mat-cell"> {{element.id}} </td>
+                    <td class="mat-cell"> {{element.registrationDate}} </td>
+                    <td class="mat-cell"> {{element.courseName}} </td>
+                    <td class="mat-cell">
+                        <mat-slider thumbLabel tickInterval="1" value="{{element.progress}}" min="0" step="25" max="100"
+                            disabled>
+                        </mat-slider>
+                    </td>
+                    <td class="mat-cell"> {{element.userName}} </td>
+                    <td class="mat-cell">
+                        <mat-slider thumbLabel tickInterval="1" value="{{element.rating}}" min="1" step="1" max="5"
+                            disabled>
+                        </mat-slider>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>

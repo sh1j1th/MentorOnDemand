@@ -1,0 +1,94 @@
+<!--List all students-->
+<!-- <h3>Student List</h3>
+<div>
+    <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+
+       
+        <ng-container matColumnDef="userName">
+            <mat-header-cell *matHeaderCellDef> user Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.userName}} </mat-cell>
+        </ng-container>
+       
+        <ng-container matColumnDef="phoneNumber">
+            <mat-header-cell *matHeaderCellDef> phone Number </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.phoneNumber}} </mat-cell>
+        </ng-container>
+       
+        <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef> email </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+       
+        <ng-container matColumnDef="isEnabled">
+            <mat-header-cell *matHeaderCellDef> is Blocked </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.isEnabled}} </mat-cell>
+        </ng-container>
+
+  
+        <ng-container matColumnDef="Actions">
+            <mat-header-cell *matHeaderCellDef> Change Access </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="action-link">
+                <button mat-button (click)="modifyAccess(element.id)"
+                >{{!element.isEnabled}}</button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div> -->
+
+<div>
+    <table class="mat-table mat-elevation-z8">
+        <thead>
+            <tr class="mat-header-row">
+                <th class="mat-header-cell"> Id </th>
+                <th class="mat-header-cell"> Username </th>
+                <th class="mat-header-cell"> Phone Number </th>
+                <th class="mat-header-cell"> Email</th>
+                <th class="mat-header-cell"> Name </th>
+                <th class="mat-header-cell"> Is Blocked </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="mat-row" *ngFor="let element of tableData">
+                <td class="mat-cell"> {{element.id}} </td>
+                <td class="mat-cell"> {{element.userName}} </td>
+                <td class="mat-cell"> {{element.phoneNumber}} </td>
+                <td class="mat-cell"> {{element.email}} </td>
+                <td class="mat-cell"> {{element.name}} </td>
+                <td class="mat-cell"> {{element.isEnabled}} </td>
+                <td class="mat-cell">
+                    <button mat-raised-button color="primary" (click)="modifyAccess(element.id)"
+                >{{!element.isEnabled}}</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

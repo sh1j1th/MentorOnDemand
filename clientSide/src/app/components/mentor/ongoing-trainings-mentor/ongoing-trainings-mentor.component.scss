@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+    height: auto;
+    empty-cells: initial;
+
+}
+.mat-header-cell{
+    width: fit-content;
+    text-align: left;
+
+}
+.mat-cell{
+    width: fit-content;
+    text-align: left;
+}

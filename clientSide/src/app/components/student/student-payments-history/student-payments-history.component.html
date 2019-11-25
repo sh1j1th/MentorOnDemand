@@ -1,0 +1,21 @@
+<mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+
+        <div>
+            <table class="mat-table mat-elevation-z8">
+                <tbody>
+                    <tr class="mat-row" *ngFor="let element of tableData">
+                        <td class="mat-cell">
+                            Payment Id(<strong>{{element.paymentId}}</strong>):
+                            You paid <strong>{{element.amount}}</strong> on
+                            <strong>{{element.paymentDate}}</strong> for
+                            <strong>{{element.courseId}} ({{element.courseName}})</strong> having
+                            Registration Id: <strong>{{element.registrationId}}</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </mat-grid-tile>
+</mat-grid-list>

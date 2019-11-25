@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="navbar">
+    <mat-toolbar-row>
+        <h1>MoD</h1>
+        <div>
+            <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]=""> Home </a>      
+        </div>
+        <div >
+            <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]="'/login'"> Login </a>
+            <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]="'/register'"> Register </a>
+            <!-- <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]="'/adminDashboard'"> Admin </a>
+            <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]="'/studentDashboard'"> Student </a>
+            <a mat-button *ngIf="!authService.isAuthenticated()" [routerLink]="'/mentorDashboard'"> Mentor </a> -->
+            <a mat-button *ngIf="authService.isAuthenticated()" (click)="authService.logoutUser()"
+            [routerLink]="'/login'"> Logout </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar> 
+

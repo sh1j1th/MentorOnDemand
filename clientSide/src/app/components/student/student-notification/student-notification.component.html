@@ -1,0 +1,53 @@
+<mat-grid-list cols="4">
+    <mat-grid-tile *ngIf="approveData" #approved [colspan]="4" [rowspan]="1" [style.background]="lightgreen">
+
+        <div>
+            <table class="mat-table mat-elevation-z8">
+                <thead>
+                    <tr class="mat-header-row">
+                        <th class="mat-header-cell">
+                            <h3>Payment pending</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mat-row" *ngFor="let element of approveData">
+                        <td class="mat-cell"> Your request for<strong> {{element.courseName}} </strong>course on
+                            <strong> {{element.requestDate}} </strong>
+                            for<strong> {{element.slot}} </strong>
+                            slot has been accepted by<strong> {{element.mentorName}}</strong>. Happy Learning!!
+                        </td>
+                        <td class="mat-cell"> <button mat-raised-button color="primary"
+                                (click)="openDialog(element.registrationId,element.price)">Pay</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="rejectData" #rejected [colspan]="4" [rowspan]="1" [style.background]="lightgreen">
+
+        <div>
+            <table class="mat-table mat-elevation-z8">
+                <thead>
+                    <tr class="mat-header-row">
+                        <th class="mat-header-cell">
+                            <h3>Request rejected</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody scrollable="scrollable">
+                    <tr class="mat-row" *ngFor="let element of rejectData">
+                        <td class="mat-cell">Your request for<strong> {{element.courseName}} </strong>course on
+                            <strong> {{element.requestDate}} </strong>
+                            for<strong> {{element.slot}} </strong>
+                            slot has been rejected by<strong> {{element.mentorName}}</strong>. Try another slot!!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </mat-grid-tile>
+</mat-grid-list>

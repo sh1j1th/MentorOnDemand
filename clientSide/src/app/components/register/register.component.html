@@ -1,0 +1,75 @@
+<mat-card class="register-card">
+    <mat-card-title>
+        REGISTER
+    </mat-card-title>
+
+    <mat-card-content>
+        <form #regForm="ngForm" (ngSubmit)="register(regForm.value)" class="form">
+            <mat-form-field>
+                <mat-select placeholder="I'm a" [(ngModel)]="roleId" name="roleId" required>
+                    <mat-option value="1">Admin</mat-option>
+                    <mat-option value="2">Mentor</mat-option>
+                    <mat-option value="3">Student</mat-option>
+                </mat-select>
+                <mat-error ng-show="regForm.roleId.$touched && regForm.roleId.$invalid">Field is required</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="First name" [(ngModel)]="firstName" name="firstName" required>
+                <mat-error ng-show="regForm.firstName.$touched && regForm.firstName.$invalid">Field is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput placeholder="Last Name" [(ngModel)]="lastName" name="lastName" required>
+                <mat-error ng-show="regForm.lastName.$touched && regForm.lastName.$invalid">Field is required
+                </mat-error>
+            </mat-form-field>
+            <!-- <mat-form-field>
+                <mat-label>Date of Birth</mat-label>
+                <input matInput name="dateOfBirth" [matDatepicker]="picker" [(ngModel)]="dateOfBirth"
+                    placeholder="Date of Birth" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field> -->
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" [(ngModel)]="email" name="email" required
+                    [formControl]="emailFormControl">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                </mat-error>
+
+                <!-- <mat-error ng-show="regForm.email.$touched && regForm.email.$invalid">Field is required</mat-error> -->
+
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Phone Number</mat-label>
+                <mat-hint>Enter 10 digits only</mat-hint>
+                <input type="number" matInput placeholder="Phone Number" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$"
+                [(ngModel)]="phoneNumber" name="phoneNumber" required
+                    minlength="10" max="10000000000" oninput="validity.valid|| (value='');">
+                <!-- <mat-error 
+ ng-show="regForm.phoneNumber.$touched && regForm.phoneNumber.$invalid" 
+                >Field is required
+                </mat-error> -->
+                <!-- https://www.reddit.com/r/Angular2/comments/9tapqk/toggling_error_messages_using_material_materror/ -->
+
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <mat-hint>Minimum 8 characters</mat-hint>
+                <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required
+                    minlength="6">
+                <mat-error ng-show="regForm.password.$touched && regForm.password.$invalid">Field is required
+                </mat-error>
+
+            </mat-form-field>
+
+            <mat-card-actions>
+                <button mat-raised-button type="submit" color="primary" [disabled]="!regForm.valid">REGISTER</button>
+            </mat-card-actions>
+        </form>
+    </mat-card-content>
+
+</mat-card>

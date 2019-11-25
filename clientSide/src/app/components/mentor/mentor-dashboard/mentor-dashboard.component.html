@@ -1,0 +1,15 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+        <a mat-button [routerLink]="['allTechnologies']" routerLinkActive="active" color="primary">All Technologies</a>
+        <a mat-button [routerLink]="['myCourses']" routerLinkActive="active" color="primary">My Courses</a>
+        <a mat-button [routerLink]="['ongoingTrainings']" routerLinkActive="active" color="primary">Ongoing Trainings</a>
+        <a mat-button [routerLink]="['completedTrainings']" routerLinkActive="active" color="primary">Completed Trainings</a>
+        <a mat-button [routerLink]="['mentorPaymentHistory']" routerLinkActive="active" color="primary">Balance Payments</a>
+        <a mat-button [routerLink]="['mentorNotifications']" routerLinkActive="active" color="primary">Notifications</a>
+        <!-- <a mat-button [routerLink]="['mentorProfile']" routerLinkActive="active" color="primary">My Profile</a> -->
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

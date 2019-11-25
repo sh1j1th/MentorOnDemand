@@ -1,0 +1,43 @@
+<h2 mat-dialog-title>Create a course</h2>
+<mat-dialog-content>
+  <form #editForm="ngForm" (ngSubmit)="createCourse(editForm.value)" class="form">
+    
+      <mat-form-field>
+          <mat-label>Mentor Details</mat-label>
+          <input matInput placeholder="Mentor Email" [(ngModel)]="mentorEmail" name="mentorEmail" 
+           readonly>
+      </mat-form-field>
+
+      <mat-form-field>
+          <mat-label>Technology Id</mat-label>
+          <input matInput placeholder="TechnologyId" [(ngModel)]="technologyId" name="technologyId" 
+           readonly>
+          <mat-error ng-show="createCourse.technologyId.$touched && createCourse.technologyId.$invalid">Field is required
+              </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-select placeholder="Course Slot" [(ngModel)]="slotId" name="slotId" required>
+              <mat-option value="1">9:00 AM to 11:00 AM</mat-option>
+              <mat-option value="2">4:00 PM to 6:00 PM</mat-option>
+              <mat-option value="3">7:00 PM to 9:00 PM</mat-option>
+            </mat-select>
+          </mat-form-field>
+ 
+        <mat-form-field>
+          <mat-label>Price</mat-label>
+          <input matInput type="number" placeholder="Price (INR)" [(ngModel)]="price" name="price"
+          min="0" required>
+          <mat-error ng-show="createCourse.price.$touched && createCourse.price.$invalid">Field is required
+          </mat-error>
+        </mat-form-field>
+    
+
+    <mat-card-actions>
+      <button mat-raised-button type="submit" color="primary" [disabled]="!editForm.valid">Create</button>
+      <button mat-raised-button [mat-dialog-close]="true" color="accent" style="float:right">Cancel</button>
+    </mat-card-actions>
+  </form>
+
+</mat-dialog-content>
+

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191123040124_AuthMigration.cs" />
+    <Compile Remove="Migrations\20191123040124_AuthMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191123040536_AuthMigration.cs" />
+    <Compile Remove="Migrations\20191123040536_AuthMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191123040817_AuthMigration.cs" />
+    <Compile Remove="Migrations\20191123040817_AuthMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191124060604_localMigration.cs" />
+    <Compile Remove="Migrations\20191124060604_localMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MoD.SharedLibrary\MoD.SharedLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

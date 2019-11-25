@@ -1,0 +1,27 @@
+
+mat-header-cell{
+        text-transform: uppercase;
+    }
+
+    table{
+        width: 100%;
+        height: auto;
+    }
+    .mat-header-cell{
+        width: fit-content;
+        text-align: left;
+    
+    }
+    .mat-cell{
+        width: fit-content;
+        text-align: left;
+    }
+    tr:nth-child(even){
+        background-color:lightslategrey;
+        }
+        .mat-raised-button{
+            width: 100%;
+        }
+mat-header-cell{
+        text-transform: uppercase;
+    }

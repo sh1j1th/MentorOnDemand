@@ -1,0 +1,10 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <a mat-button [routerLink]="['technologyCRUD']" routerLinkActive="active" color="primary">Technology</a>
+    <a mat-button [routerLink]="['studentOps']" routerLinkActive="active" color="primary">Students</a>
+    <a mat-button [routerLink]="['mentorOps']" routerLinkActive="active" color="primary">Mentors</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

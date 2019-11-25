@@ -1,0 +1,50 @@
+<h2 mat-dialog-title>Edit a technology</h2>
+<mat-dialog-content>
+  <form #editForm="ngForm" (ngSubmit)="editTech(editForm.value)" class="form">
+    <mat-form-field>
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" [(ngModel)]="id" name="id" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Technology</mat-label>
+      <input matInput placeholder="Technology" [(ngModel)]="technologyName" name="technologyName" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Status" [(ngModel)]="status" name="status" value="{{status}}" required>
+        <mat-option value="active">Active</mat-option>
+        <mat-option value="suspended">Suspended</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Commission</mat-label>
+      <input matInput placeholder="commission in %" [(ngModel)]="commission" name="commission" readonly>
+      <mat-error ng-show="editTech.commission.$touched && editTech.commission.$invalid">Field is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Image URL</mat-label>
+      <input matInput placeholder="imageURL" [(ngModel)]="imageURL" name="imageURL" required>
+      <mat-error ng-show="editTech.imageURL.$touched && editTech.imageURL.$invalid">Field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput placeholder="Description" [(ngModel)]="description" name="description"
+        required>
+      <mat-error ng-show="editTech.description.$touched && editTech.description.$invalid">Field is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- https://www.reddit.com/r/Angular2/comments/9tapqk/toggling_error_messages_using_material_materror/ -->
+
+
+    <mat-card-actions>
+      <button mat-raised-button type="submit" color="primary" [disabled]="!editForm.valid">Edit</button>
+      <button mat-raised-button [mat-dialog-close]="true" color="accent" style="float:right">Cancel</button>
+    </mat-card-actions>
+  </form>
+
+</mat-dialog-content>

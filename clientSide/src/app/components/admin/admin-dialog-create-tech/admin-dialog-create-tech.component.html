@@ -1,0 +1,52 @@
+<h2 mat-dialog-title>Create a technology</h2>
+<mat-dialog-content>
+
+  <form #createForm="ngForm" (ngSubmit)="createTech(createForm.value)" class="form">
+
+    <mat-form-field>
+      <mat-label>Technology</mat-label>
+      <input matInput placeholder="Technology" [(ngModel)]="technologyName" name="technologyName" required>
+      <mat-error ng-show="createTech.technologyName.$touched && createTech.technologyName.$invalid">Field is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-select placeholder="Status" [(ngModel)]="status" name="status" required>
+            <mat-option value="active">Active</mat-option>
+            <mat-option value="suspended">Suspended</mat-option>
+        </mat-select>
+        <mat-error ng-show="createTech.statusId.$touched && createTech.statusId.$invalid">Field is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Commission</mat-label>
+      <input matInput placeholder="Commission in %" [(ngModel)]="commission"
+       name="commission" required min="0" max="100" oninput="validity.valid||(value='');">
+      <mat-error ng-show="createTech.commission.$touched && createTech.commission.$invalid">Field is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Image URL</mat-label>
+      <input type="url" matInput placeholder="imageURL"
+       [(ngModel)]="imageURL" name="imageURL" required>
+      <mat-error ng-show="createTech.imageURL.$touched && 
+      createTech.imageURL.$invalid">Field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput placeholder="Description" [(ngModel)]="description" name="description" required>
+      <mat-error ng-show="createTech.description.$touched && createTech.description.$invalid">Field is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- https://www.reddit.com/r/Angular2/comments/9tapqk/toggling_error_messages_using_material_materror/ -->
+
+
+    <mat-card-actions>
+      <button mat-raised-button
+       type="submit" color="primary" [disabled]="!createForm.valid">Create</button>
+      <button mat-raised-button [mat-dialog-close]="true" color="accent" style="float:right">Cancel</button>
+    </mat-card-actions>
+  </form>
+
+</mat-dialog-content>

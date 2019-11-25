@@ -1,0 +1,24 @@
+<div>
+    <table class="mat-table mat-elevation-z8">
+        <thead>
+            <tr class="mat-header-row">
+                <th class="mat-header-cell"> Id </th>
+                <th class="mat-header-cell"> Course Name </th>
+                <th class="mat-header-cell"> Price </th>
+                <th class="mat-header-cell"> SlotId </th>
+                <th class="mat-header-cell"> Description </th>
+                <th class="mat-header-cell"> Technology Id </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="mat-row" *ngFor="let element of tableData">
+                <td class="mat-cell"> {{element.id}} </td>
+                <td class="mat-cell"> {{element.courseName}} </td>
+                <td class="mat-cell"> {{element.price}} </td>
+                <td class="mat-cell"> {{element.slotId}} </td>
+                <td class="mat-cell"> {{element.description}} </td>
+                <td class="mat-cell"> {{element.technologyId}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

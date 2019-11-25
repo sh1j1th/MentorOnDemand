@@ -1,0 +1,20 @@
+.example-container {
+    position: relative;
+    background: #eee;
+    height: 100%;
+  }
+  mat-sidenav{
+      width: 150px; 
+  }
+  .mat-button{
+      width: 100%;
+  }
+  .mat-button:hover{
+      font-size: 15px;
+      color:black;
+  }
+  .mat-button:focus{
+    font-size: 15px;
+    color:black;
+    background: #eee;
+  }
