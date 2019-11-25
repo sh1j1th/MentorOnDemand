@@ -41,7 +41,7 @@ export class EditTechDialogComponent implements OnInit {
     editForm = JSON.stringify(editForm);
     console.log(editForm)
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/adminservice/" + this.id, editForm, { headers: headers, responseType: "text" }).subscribe(
+    this.http.put("http://localhost:9075/adminservice/" + this.id, editForm, { headers: headers, responseType: "text" }).subscribe(
       (result) => {
 
         console.log(result);

@@ -33,7 +33,7 @@ export class StudentNotificationComponent implements OnInit {
   rejectData;
   approveNotifications = function () {
 
-    this.http.get("https://localhost:44319/studentservice/approved/"+this.studentEmail).subscribe(
+    this.http.get("http://localhost:9075/studentservice/approved/"+this.studentEmail).subscribe(
       (result: any[]) => {
         this.approveData = result;
 
@@ -48,7 +48,7 @@ export class StudentNotificationComponent implements OnInit {
     // let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     // this.studentEmail = {"studentEmail":this.studentEmail}
     // this.studentEmail = JSON.stringify(this.studentEmail);
-    this.http.get("https://localhost:44319/studentservice/rejected/"+this.studentEmail).subscribe(
+    this.http.get("http://localhost:9075/studentservice/rejected/"+this.studentEmail).subscribe(
       (result: any[]) => {
         this.rejectData = result;
       },

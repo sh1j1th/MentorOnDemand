@@ -24,7 +24,7 @@ export class MentorNotificationsComponent implements OnInit {
 tableData;
 
   getNotifications = function () {
-    this.http.get("https://localhost:44319/mentorservice/mentorNotifications/"+this.mentorEmail).subscribe(
+    this.http.get("http://localhost:9075/mentorservice/mentorNotifications/"+this.mentorEmail).subscribe(
       (result: any[]) => {
         this.tableData = result;
         console.log(this.tableData)
@@ -40,7 +40,7 @@ tableData;
 
   approveRequest(registrationId: number, isApproved: boolean){
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/mentorservice/courseRequestUpdate/"+registrationId,
+    this.http.put("http://localhost:9075/mentorservice/courseRequestUpdate/"+registrationId,
      isApproved,{ headers: headers, responseType: "text" }).subscribe(
       (result: any) => {
         console.log(result);
@@ -53,7 +53,7 @@ tableData;
   }
   rejectRequest(registrationId: number, isApproved: boolean){
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/mentorservice/courseRequestUpdate/"+registrationId,
+    this.http.put("http://localhost:9075/mentorservice/courseRequestUpdate/"+registrationId,
      isApproved,{ headers: headers, responseType: "text" }).subscribe(
       (result: any) => {
         console.log(result);

@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
 
     let Headers = new HttpHeaders({ 'Content-Type': 'application/json'})
 
-      this.http.post("https://localhost:44319/authservice/register", userReg,
+      this.http.post("http://localhost:9075/authservice/register", userReg,
         { headers: Headers, responseType: 'text' }).subscribe(
           (result) => {
             console.log(result)

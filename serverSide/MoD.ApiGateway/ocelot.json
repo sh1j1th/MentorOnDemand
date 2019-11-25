@@ -34,7 +34,8 @@
           "Port": 9045
         }
       ],
-      "UpstreamPathTemplate": "/adminservice/{catchAll}"
+      "UpstreamPathTemplate": "/adminservice/{catchAll}",
+      "UpstreamHttpMethod": ["Get","Put","Post","Delete"]
     },
     //mentor part
     {
@@ -46,7 +47,8 @@
           "Port": 9065
         }
       ],
-      "UpstreamPathTemplate": "/mentorservice/{catchAll}"
+      "UpstreamPathTemplate": "/mentorservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ]
     },
     //student part
     {
@@ -58,7 +60,8 @@
           "Port": 9055
         }
       ],
-      "UpstreamPathTemplate": "/studentservice/{catchAll}"
+      "UpstreamPathTemplate": "/studentservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ]
     }
   ],
   "GlobalConfiguration": {

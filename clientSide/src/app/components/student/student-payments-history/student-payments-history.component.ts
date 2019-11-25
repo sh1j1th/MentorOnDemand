@@ -23,7 +23,7 @@ export class StudentPaymentsHistoryComponent implements OnInit {
 
   tableData;
   getHistory(){
-    this.http.get("https://localhost:44319/studentservice/paymentHistory/"+this.studentEmail).subscribe(
+    this.http.get("http://localhost:9075/studentservice/paymentHistory/"+this.studentEmail).subscribe(
       (result: any[]) => {
         this.tableData = result;
         console.log(result);

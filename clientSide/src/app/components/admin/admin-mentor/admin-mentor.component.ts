@@ -26,7 +26,7 @@ export class AdminMentorComponent implements OnInit {
   displayedColumns = [];
   dataSource;
   listMentors = function () {
-    this.http.get("https://localhost:44319/adminservice/users/2").subscribe(
+    this.http.get("http://localhost:9075/adminservice/users/2").subscribe(
       (result: any[]) => {
         this.tableData = result;
         this.mentorList = result;
@@ -47,7 +47,7 @@ export class AdminMentorComponent implements OnInit {
   }
 
   modifyAccess(id: string){
-    this.http.get("https://localhost:44319/adminservice/useraccess/"+id,{responseType: 'text'}).subscribe(
+    this.http.get("http://localhost:9075/adminservice/useraccess/"+id,{responseType: 'text'}).subscribe(
       (result) => {
         
         console.log(result);

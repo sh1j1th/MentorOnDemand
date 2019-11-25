@@ -35,7 +35,7 @@ export class PaymentDialogComponent implements OnInit {
     paymentForm = JSON.stringify(paymentForm);
     console.log(paymentForm)
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/studentservice/paymentService/" + this.studentEmail, paymentForm,
+    this.http.put("http://localhost:9075/studentservice/paymentService/" + this.studentEmail, paymentForm,
      { headers: headers, responseType: "text" }).subscribe(
       (result) => {
 

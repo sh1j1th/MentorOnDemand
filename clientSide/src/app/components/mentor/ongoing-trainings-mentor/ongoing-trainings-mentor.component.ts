@@ -34,7 +34,7 @@ show = false;
     // this.mentorEmail = JSON.stringify(this.mentorEmail);
     // console.log(this.mentorEmail);
 
-    this.http.get("https://localhost:44319/mentorservice/ongoingTrainings/"+this.mentorEmail,
+    this.http.get("http://localhost:9075/mentorservice/ongoingTrainings/"+this.mentorEmail,
     //{responseType: "text" }
     ).subscribe(
       (result: any[]) => {

@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
 
     let Headers = new HttpHeaders({ 'Content-Type': 'application/json' })
 
-    this.http.post("https://localhost:44319/authservice/login", userLogin,
+    this.http.post("http://localhost:9075/authservice/login", userLogin,
       { headers: Headers, responseType: 'text' }).subscribe(
         (result) => {
           localStorage.setItem('token', result);

@@ -29,7 +29,7 @@ export class ListCoursesComponent implements OnInit {
   listCourses = function () {
     var mentorEmail = this.mentorEmail;
     console.log(mentorEmail);
-    this.http.get("https://localhost:44319/mentorservice/myCourses/"+mentorEmail).subscribe(
+    this.http.get("http://localhost:9075/mentorservice/myCourses/"+mentorEmail).subscribe(
       (result: any[]) => {
         this.tableData = result;
 

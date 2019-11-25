@@ -24,7 +24,7 @@ export class ListCoursesStudentComponent implements OnInit {
 
   tableData;
   listCourses = function () {
-    this.http.get("https://localhost:44319/studentservice/searchCourses").subscribe(
+    this.http.get("http://localhost:9075/studentservice/searchCourses").subscribe(
       (result: any[]) => {
         this.tableData = result;
       },
@@ -48,7 +48,7 @@ export class ListCoursesStudentComponent implements OnInit {
 
     console.log(requestForm)
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.post("https://localhost:44319/studentservice/requestCourse", requestForm,
+    this.http.post("http://localhost:9075/studentservice/requestCourse", requestForm,
       { headers: headers, responseType: 'text' }).subscribe(
         (result) => {
           console.log("Request successfull");

@@ -24,7 +24,7 @@ export class AdminStudentComponent implements OnInit {
   displayedColumns = [];
   dataSource;
   listStudents = function () {
-    this.http.get("https://localhost:44319/adminservice/users/3").subscribe(
+    this.http.get("http://localhost:9075/adminservice/users/3").subscribe(
       (result: any[]) => {
         this.tableData = result;
         // this.studentList = result;
@@ -47,7 +47,7 @@ export class AdminStudentComponent implements OnInit {
   }
 
   modifyAccess(id: string){
-    this.http.get("https://localhost:44319/adminservice/useraccess/"+id,{responseType: 'text'}).subscribe(
+    this.http.get("http://localhost:9075/adminservice/useraccess/"+id,{responseType: 'text'}).subscribe(
       (result) => {
         
         console.log(result);

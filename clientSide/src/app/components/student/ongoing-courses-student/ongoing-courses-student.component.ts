@@ -30,7 +30,7 @@ export class OngoingCoursesStudentComponent implements OnInit {
     // let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     // this.studentEmail = {"studentEmail":this.studentEmail}
     // this.studentEmail = JSON.stringify(this.studentEmail);
-    this.http.get("https://localhost:44319/studentservice/ongoingCourses/"+this.studentEmail).subscribe(
+    this.http.get("http://localhost:9075/studentservice/ongoingCourses/"+this.studentEmail).subscribe(
       (result: any[]) => {
         this.tableData = result;
         console.log(result);
@@ -45,7 +45,7 @@ export class OngoingCoursesStudentComponent implements OnInit {
   }
   onRatingChange(event: MatSliderChange,id: number,field: string) {
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/studentservice/rating/" + id, event.value,
+    this.http.put("http://localhost:9075/studentservice/rating/" + id, event.value,
      { headers: headers, responseType: "text" }).subscribe(
       (result) => {
         console.log("new rating");
@@ -66,7 +66,7 @@ export class OngoingCoursesStudentComponent implements OnInit {
     console.log(id)
     console.log(field);
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.put("https://localhost:44319/studentservice/progress/" + id, event.value,
+    this.http.put("http://localhost:9075/studentservice/progress/" + id, event.value,
      { headers: headers, responseType: "text" }).subscribe(
       (result) => {
         console.log("new rating");

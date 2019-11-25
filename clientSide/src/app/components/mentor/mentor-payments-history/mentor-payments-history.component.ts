@@ -23,7 +23,7 @@ export class MentorPaymentsHistoryComponent implements OnInit {
 
   tableData;
   getHistory(){
-    this.http.get("https://localhost:44319/mentorservice/paymentHistory/"+this.mentorEmail).subscribe(
+    this.http.get("http://localhost:9075/mentorservice/paymentHistory/"+this.mentorEmail).subscribe(
       (result: any) => {
         this.tableData = result;
         console.log(result);

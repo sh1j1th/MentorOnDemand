@@ -32,7 +32,7 @@ export class ListTechnologiesComponent implements OnInit {
 tableData;
 
   listTechnology = function () {
-    this.http.get("https://localhost:44319/mentorservice/listTech",
+    this.http.get("http://localhost:9075/mentorservice/listTech",
     {Authorization: 'Bearer ' + localStorage.getItem('token')}).subscribe(
       (result: any[]) => {
         this.tableData = result;

@@ -31,7 +31,7 @@ tableData;
     // this.mentorEmail = {"mentorEmail":this.mentorEmail}
     // this.mentorEmail = JSON.stringify(this.mentorEmail);
     // console.log(this.mentorEmail);
-    this.http.get("https://localhost:44319/mentorservice/completedTrainings/"+this.mentorEmail,
+    this.http.get("http://localhost:9075/mentorservice/completedTrainings/"+this.mentorEmail,
     {  responseType: "text" }).subscribe(
       (result: any) => {
         this.tableData = JSON.parse(result);
