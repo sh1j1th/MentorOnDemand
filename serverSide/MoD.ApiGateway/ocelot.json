@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44360 // replace with authservice port number
+          "Port": 9085 // replace with authservice port number
         }
       ],
       "UpstreamPathTemplate": "/authservice/{catchAll}" //now matches all 
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44328
+          "Port": 9045
         }
       ],
       "UpstreamPathTemplate": "/adminservice"
@@ -31,7 +31,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44328
+          "Port": 9045
         }
       ],
       "UpstreamPathTemplate": "/adminservice/{catchAll}"
@@ -43,7 +43,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44388
+          "Port": 9065
         }
       ],
       "UpstreamPathTemplate": "/mentorservice/{catchAll}"
@@ -55,14 +55,14 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44383
+          "Port": 9055
         }
       ],
       "UpstreamPathTemplate": "/studentservice/{catchAll}"
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44319"
+    "BaseUrl": "https://localhost:9075"
   }
 
 }
