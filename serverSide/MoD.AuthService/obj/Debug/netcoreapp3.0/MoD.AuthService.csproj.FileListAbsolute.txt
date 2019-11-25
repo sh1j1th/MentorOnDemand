@@ -241,3 +241,4 @@ C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AuthService\obj\Debug\netcorea
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AuthService\obj\Debug\netcoreapp3.0\MoD.AuthService.csproj.CopyComplete
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AuthService\obj\Debug\netcoreapp3.0\MoD.AuthService.dll
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AuthService\obj\Debug\netcoreapp3.0\MoD.AuthService.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AuthService\obj\Debug\netcoreapp3.0\MoD.AuthService.MvcApplicationPartsAssemblyInfo.cache

@@ -249,3 +249,4 @@ C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AdminService\obj\Debug\netcore
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AdminService\obj\Debug\netcoreapp3.0\MoD.AdminService.csproj.CopyComplete
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AdminService\obj\Debug\netcoreapp3.0\MoD.AdminService.dll
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AdminService\obj\Debug\netcoreapp3.0\MoD.AdminService.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.AdminService\obj\Debug\netcoreapp3.0\MoD.AdminService.MvcApplicationPartsAssemblyInfo.cache

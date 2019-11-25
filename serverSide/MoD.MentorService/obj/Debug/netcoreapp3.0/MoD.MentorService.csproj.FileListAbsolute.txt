@@ -245,3 +245,4 @@ C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.MentorService\obj\Debug\netcor
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.MentorService\obj\Debug\netcoreapp3.0\MoD.MentorService.csproj.CopyComplete
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.MentorService\obj\Debug\netcoreapp3.0\MoD.MentorService.dll
 C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.MentorService\obj\Debug\netcoreapp3.0\MoD.MentorService.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.MentorService\obj\Debug\netcoreapp3.0\MoD.MentorService.MvcApplicationPartsAssemblyInfo.cache
