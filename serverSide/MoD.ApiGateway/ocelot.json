@@ -2,7 +2,7 @@
   "ReRoutes": [
     {
       "DownstreamPathTemplate": "/api/account/{catchAll}", //sent to whom
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -15,7 +15,7 @@
     //admin part
     {
       "DownstreamPathTemplate": "/api/admin",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -27,7 +27,7 @@
     //admin catchall part
     {
       "DownstreamPathTemplate": "/api/admin/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -39,7 +39,7 @@
     //mentor part
     {
       "DownstreamPathTemplate": "/api/mentor/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -51,7 +51,7 @@
     //student part
     {
       "DownstreamPathTemplate": "/api/student/{catchAll}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -62,7 +62,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:9075"
+    "BaseUrl": "http://localhost:9075"
   }
 
 }
