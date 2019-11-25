@@ -31,3 +31,14 @@ C:\Users\HP\Desktop\MoD_MicroService\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.
 C:\Users\HP\Desktop\MoD_MicroService\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.csproj.CopyComplete
 C:\Users\HP\Desktop\MoD_MicroService\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.dll
 C:\Users\HP\Desktop\MoD_MicroService\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\bin\Debug\netcoreapp3.0\MoD.DtoLibrary.deps.json
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\bin\Debug\netcoreapp3.0\MoD.DtoLibrary.dll
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\bin\Debug\netcoreapp3.0\MoD.DtoLibrary.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\bin\Debug\netcoreapp3.0\MoD.SharedLibrary.dll
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\bin\Debug\netcoreapp3.0\MoD.SharedLibrary.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.AssemblyInfo.cs
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.csproj.CopyComplete
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.dll
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.DtoLibrary\obj\Debug\netcoreapp3.0\MoD.DtoLibrary.pdb

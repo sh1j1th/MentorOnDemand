@@ -1860,7 +1860,10 @@
         },
         "runtime": {
           "bin/placeholder/MoD.AdminLibrary.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "MoD.AuthLibrary/1.0.0": {
         "type": "project",
@@ -1878,22 +1881,30 @@
         },
         "runtime": {
           "bin/placeholder/MoD.AuthLibrary.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "MoD.SharedLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
-          "Microsoft.EntityFrameworkCore": "3.0.1"
+          "Microsoft.EntityFrameworkCore": "3.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1"
         },
         "compile": {
           "bin/placeholder/MoD.SharedLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/MoD.SharedLibrary.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6494,6 +6505,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.0.0",
+      "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 3.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.1",
@@ -6508,11 +6520,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AdminService\\MoD.AdminService.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AdminService\\MoD.AdminService.csproj",
       "projectName": "MoD.AdminService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AdminService\\MoD.AdminService.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AdminService\\MoD.AdminService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AdminService\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AdminService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6528,11 +6540,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AdminLibrary\\MoD.AdminLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AdminLibrary\\MoD.AdminLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AdminLibrary\\MoD.AdminLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AdminLibrary\\MoD.AdminLibrary.csproj"
             },
-            "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj"
             }
           }
         }
@@ -6549,6 +6561,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "Microsoft.AspNetCore.Identity": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

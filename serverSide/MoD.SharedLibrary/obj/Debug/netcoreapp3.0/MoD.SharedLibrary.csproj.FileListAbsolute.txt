@@ -20,3 +20,11 @@ C:\Users\HP\Desktop\MoD_MicroService\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\M
 C:\Users\HP\Desktop\MoD_MicroService\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.AssemblyInfo.cs
 C:\Users\HP\Desktop\MoD_MicroService\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.dll
 C:\Users\HP\Desktop\MoD_MicroService\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\bin\Debug\netcoreapp3.0\MoD.SharedLibrary.deps.json
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\bin\Debug\netcoreapp3.0\MoD.SharedLibrary.dll
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\bin\Debug\netcoreapp3.0\MoD.SharedLibrary.pdb
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.AssemblyInfo.cs
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.dll
+C:\Users\HP\Desktop\MentorOnDemand\serverSide\MoD.SharedLibrary\obj\Debug\netcoreapp3.0\MoD.SharedLibrary.pdb

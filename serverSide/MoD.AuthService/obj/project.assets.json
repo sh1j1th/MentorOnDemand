@@ -1860,22 +1860,30 @@
         },
         "runtime": {
           "bin/placeholder/MoD.AuthLibrary.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "MoD.SharedLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.0.0",
-          "Microsoft.EntityFrameworkCore": "3.0.1"
+          "Microsoft.EntityFrameworkCore": "3.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1"
         },
         "compile": {
           "bin/placeholder/MoD.SharedLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/MoD.SharedLibrary.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6471,6 +6479,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.0.0",
+      "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 3.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.1",
@@ -6485,11 +6494,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthService\\MoD.AuthService.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthService\\MoD.AuthService.csproj",
       "projectName": "MoD.AuthService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthService\\MoD.AuthService.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthService\\MoD.AuthService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthService\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6505,11 +6514,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.AuthLibrary\\MoD.AuthLibrary.csproj"
             },
-            "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.SharedLibrary\\MoD.SharedLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.SharedLibrary\\MoD.SharedLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.SharedLibrary\\MoD.SharedLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.SharedLibrary\\MoD.SharedLibrary.csproj"
             }
           }
         }
@@ -6526,6 +6535,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "Microsoft.AspNetCore.Identity": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

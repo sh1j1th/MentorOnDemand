@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.ApiGateway\\MoD.ApiGateway.csproj": {}
+    "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.ApiGateway\\MoD.ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.ApiGateway\\MoD.ApiGateway.csproj": {
+    "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.ApiGateway\\MoD.ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.ApiGateway\\MoD.ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.ApiGateway\\MoD.ApiGateway.csproj",
         "projectName": "MoD.ApiGateway",
-        "projectPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.ApiGateway\\MoD.ApiGateway.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.ApiGateway\\MoD.ApiGateway.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\MoD_MicroService\\MoD.ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand\\serverSide\\MoD.ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,15 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.1, )"
             },
