@@ -8,7 +8,7 @@
                         <td class="mat-cell">
                             Payment Id(<strong>{{element.paymentId}}</strong>):
                             You paid <strong>{{element.amount}}</strong> on
-                            <strong>{{element.paymentDate}}</strong> for
+                            <strong>{{element.paymentDate | date: 'yyyy-MM-dd'}}</strong> for
                             <strong>{{element.courseId}} ({{element.courseName}})</strong> having
                             Registration Id: <strong>{{element.registrationId}}</strong>
                         </td>

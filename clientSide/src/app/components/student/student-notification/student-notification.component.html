@@ -13,7 +13,7 @@
                 <tbody>
                     <tr class="mat-row" *ngFor="let element of approveData">
                         <td class="mat-cell"> Your request for<strong> {{element.courseName}} </strong>course on
-                            <strong> {{element.requestDate}} </strong>
+                            <strong> {{element.requestDate | date: 'yyyy-MM-dd'}} </strong>
                             for<strong> {{element.slot}} </strong>
                             slot has been accepted by<strong> {{element.mentorName}}</strong>. Happy Learning!!
                         </td>

@@ -14,8 +14,8 @@
                 <tbody>
                   <tr class="mat-row" *ngFor="let element of tableData">
                     <td class="mat-cell"> {{element.id}} </td>
-                    <td class="mat-cell"> {{element.registrationDate}} </td>
-                    <td class="mat-cell"> {{element.completionDate}} </td>
+                    <td class="mat-cell"> {{element.registrationDate | date: 'yyyy-MM-dd'}} </td>
+                    <td class="mat-cell"> {{element.completionDate | date: 'yyyy-MM-dd'}} </td>
                     <td class="mat-cell"> {{element.courseName}} </td>
                     <td class="mat-cell"> {{element.userName}} </td>
                     <td class="mat-cell"><mat-slider thumbLabel tickInterval="1" value="{{element.rating}}" min="1" step="1" max="5"

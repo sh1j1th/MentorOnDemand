@@ -8,7 +8,7 @@
                         <td class="mat-cell">
                             Payment Id <strong>{{element.paymentId}}</strong>:
                             Balance amount Rs.<strong>{{element.amount}}/-</strong> yet to receive from
-                            <strong>{{element.paymentDate}}</strong> for
+                            <strong>{{element.paymentDate | date: 'yyyy-MM-dd'}}</strong> for
                             <strong>{{element.courseName}} ({{element.courseId}})</strong> having
                             Registration Id <strong>{{element.registrationId}}</strong>
                         </td>
