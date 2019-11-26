@@ -35,8 +35,18 @@ export class ListCoursesComponent implements OnInit {
 
       },
       (error) => {
-        alert("Error occured, check whether Backend is running!");
-        console.log(error)
+        switch(error.status){
+          case 400: alert("Invalid input");
+          break;
+          case 401: alert("Unauthorized access, contact support");
+          break;
+          case 404: alert("Page not found, redirecting to home");
+          break;
+          case 500: alert("Internal server error, retry after sometime");
+          break;
+          case 502: alert("Bad Gateway");
+          break;
+        }
       }
     )
   }

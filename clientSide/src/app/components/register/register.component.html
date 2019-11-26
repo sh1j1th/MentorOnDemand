@@ -36,11 +36,11 @@
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="Email" [(ngModel)]="email" name="email" required
                     [formControl]="emailFormControl">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                    Please enter a valid email address
+                    <mat-error ng-show="regForm.email.$touched && regForm.email.$invalid">Please enter a valid email address</mat-error>
+                    
                 </mat-error>
 
-                <!-- <mat-error ng-show="regForm.email.$touched && regForm.email.$invalid">Field is required</mat-error> -->
+                <!--  -->
 
             </mat-form-field>
             <mat-form-field>
